@@ -1,11 +1,6 @@
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
 #footer_main {
+    justify-content: space-between;
     display: flex;
-    flex-direction: row;
     padding: 3rem 2rem;
     background: var(--clr-secondary);
 }
@@ -15,30 +10,32 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 70%;
 }
 
 #footer_right {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 30%;
+    gap: 1rem;
 }
 
 #footer_right > .left, #footer_right > .right {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 80%;
-
+    gap: .5rem;
 }
 
+#footer_right > .right {
+    border-left: .125rem solid var(--clr-accent);
+    padding-left: 1rem;
+}
 
-
-#footer_right > .right > a, #footer_right > .left > a {
-    font-size: 1.4rem;
+#footer_right a {
+    font-size: 1rem;
     color: white;
     text-decoration: none;
+}
+
+#footer_right a:hover {
+    color: var(--clr-accent);
 }
 
 #footer_bottom {

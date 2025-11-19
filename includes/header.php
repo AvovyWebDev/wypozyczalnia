@@ -14,9 +14,9 @@
 <body>
 
 <header>
-    <div class="header-logo">
+    <a href="./" class="header-logo">
         <h1>LOGO</h1>
-    </div>
+    </a>
     <div class="header-right">
         <a href="" class="header-whatsapp"><img src="images/whatsapp.svg" alt=""></a>
         <nav>

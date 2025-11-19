@@ -4,6 +4,7 @@
     --clr-primary: #262626;
     --clr-secondary: #151515;
     --clr-accent: #ff3c00;
+    --clr-accent2: #0733c4;
 
     color-scheme: dark;
     font-family: "Rubik", sans-serif;
@@ -33,11 +34,11 @@ section {
     padding: .5rem 1rem;
     font-size: 1rem;
     font-weight: 600;
-    background: rgb(117, 4, 161);
+    background: var(--clr-accent2);
     width: fit-content;
     color: white;
-    border: rgb(117, 4, 161) solid .125rem;
-    border-radius: 2rem;
+    border: var(--clr-accent2) solid .125rem;
+    border-radius: 1rem;
     transition: .125s;
     cursor: pointer;
 }

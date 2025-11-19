@@ -8,7 +8,7 @@
         <div id="footer_right">
             <div class="left">
                 <a href="">Strona główna</a>
-                <a href="">O nas</a>
+                <a href="about.php">O nas</a>
                 <a href="">Produkty</a>
             </div>
             <div class="right">

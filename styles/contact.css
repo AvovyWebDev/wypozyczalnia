@@ -1,0 +1,140 @@
+#fill {
+    height: 75px;
+}
+
+/* form */
+
+#contact {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contact_form {
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#contact_form>form {
+    padding: 3rem 6rem;
+    background: var(--clr-primary);
+    color: white;
+    display: grid;
+    width: 100%;
+    max-width: 700px;
+    gap: 2rem;
+
+}
+
+
+
+#contact_form>form>h1 {
+    position: relative;
+    font-size: 2.5rem;
+    border-radius: .25rem;
+    z-index: 1;
+    padding: .5rem 1rem;
+    border-bottom: .25rem solid var(--clr-accent);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.form-main {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+}
+
+.input-div {
+    display: grid;
+    gap: .5rem;
+}
+
+.input-div > label {
+    text-align: start;
+    font-size: 1.44rem;
+}
+
+.form-main input:not([type=checkbox]),
+.form-main textarea {
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background: var(--clr-secondary);
+    color: white;
+    border: 0.125rem solid var(--clr-accent);
+    border-radius: 0.6rem;
+}
+
+.form-main input:focus,
+.form-main textarea:focus {
+    outline: none;
+}
+
+.form-main textarea {
+    height: 12rem;
+    font-family: sans-serif;
+}
+
+.policy-input {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    place-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.policy-input > input {
+    appearance: none;
+    background: var(--clr-secondary);
+    margin: 0;
+
+    font: inherit;
+    color: var(--clr-secondary);
+    width: 1.2rem;
+    height: 1.2rem;
+    border: .125rem solid var(--clr-secondary);
+    outline: .125rem solid var(--clr-accent);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.policy-input > input:hover {
+    background: #ff3c008e;
+}
+
+.policy-input > input:checked {
+    background: var(--clr-accent);
+}
+
+.policy-input > input:focus {
+    outline: .125rem solid var(--clr-accent);
+}
+
+.policy-input a {
+    color: var(--clr-accent);
+}
+
+.policy-input a:hover {
+    color: white;
+}
+
+.form-main > button {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: .75rem 2rem;
+}

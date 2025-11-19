@@ -62,6 +62,7 @@
     align-items: center;
     gap: 2rem;
     padding: 6rem 3rem;
+    background: var(--clr-secondary);
     
 }
 
@@ -81,10 +82,10 @@
 /* Products section */
 
 .products {
-    padding: 6rem 0;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .products > h1 {
@@ -99,6 +100,7 @@
     gap: 5rem;
     padding: 2rem 3rem;
     overflow-x: auto;
+    background: var(--clr-secondary);
 }
 
 .tile {
@@ -108,11 +110,17 @@
     background: var(--clr-secondary);
     border: .125rem solid var(--clr-accent);
     border-radius: 2rem;
+    box-shadow: 0 0 2rem -.25rem black;
+    transition: .125s;
     
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
+}
+
+.tile:hover {
+    scale: 1.01;
 }
 
 .tile > img {
@@ -148,16 +156,14 @@
 /* Contact section */
 
 #contact {
-padding-top: 3rem;
-padding-bottom: 3rem;
-display: flex;
-justify-content: center;
-align-items: center;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
     height: 100%;
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,37 +171,35 @@ align-items: center;
 }
 
 #contact_form {
-    background-size: cover;
-    background-position: center;
     text-align: center;
     display: grid;
     place-items: center;
-    text-shadow: 0 0 1rem black;
 }
 
 #contact_form>form {
     padding: 3rem 6rem;
-    background: url(../images/footer_wooden_plank.jpg);
+    background: var(--clr-primary);
     color: white;
     display: grid;
     width: 100%;
     max-width: 700px;
     gap: 2rem;
     box-shadow: 0 0 2rem -.25rem black;
-    border: .125rem solid var(--clr-accent2);
-    border-radius: 1rem;
+    border: .125rem solid var(--clr-accent);
+    border-radius: 2rem;
 }
 
 
 
 #contact_form>form>h1 {
     position: relative;
-    -webkit-text-stroke: 1px black;
     font-size: 2.5rem;
-    text-shadow: 0 0 1rem black;
     border-radius: .25rem;
     z-index: 1;
-    padding: 1rem 0;
+    padding: .5rem 1rem;
+    border-bottom: .25rem solid var(--clr-accent);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 
@@ -205,26 +209,26 @@ align-items: center;
     position: relative;
 }
 
+.input-div {
+    display: grid;
+    gap: .5rem;
+}
 
+.input-div > label {
+    text-align: start;
+    font-size: 1.44rem;
+}
 
 .form-main input:not([type=checkbox]),
 .form-main textarea {
     resize: none;
-    padding: .25rem .5rem;
+    padding: .5rem 1rem;
     font-size: 1.2rem;
     border-radius: .25rem;
-    background: url(../images/background4.png);
-    background-position: center;
-    background-size: cover;
+    background: var(--clr-secondary);
     color: white;
-    border: 0.2rem solid var(--clr-accent);
+    border: 0.125rem solid var(--clr-accent);
     border-radius: 0.6rem;
-    box-shadow: 0 0 2rem -.25rem black inset;
-}
-
-.form-main input::placeholder,
-.form-main textarea::placeholder {
-    color: white;
 }
 
 .form-main input:focus,
@@ -241,41 +245,48 @@ align-items: center;
     display: flex;
     gap: 1rem;
     justify-content: center;
-    background: url(../images/background4.png);
-    background-position: center;
-    background-size: cover;
+    place-items: center;
     width: fit-content;
-    box-shadow: 0 0 2rem -.25rem black inset;
     margin: 0 auto;
-    padding: .5rem 1rem;
-    font-size: 0.9rem;
-    border-radius: .25rem;
-    
+}
+
+.policy-input > input {
+    appearance: none;
+    background: var(--clr-secondary);
+    margin: 0;
+
+    font: inherit;
+    color: var(--clr-secondary);
+    width: 1.2rem;
+    height: 1.2rem;
+    border: .125rem solid var(--clr-secondary);
+    outline: .125rem solid var(--clr-accent);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.policy-input > input:hover {
+    background: #ff3c008e;
+}
+
+.policy-input > input:checked {
+    background: var(--clr-accent);
+}
+
+.policy-input > input:focus {
+    outline: .125rem solid var(--clr-accent);
 }
 
 .policy-input a {
+    color: var(--clr-accent);
+}
+
+.policy-input a:hover {
     color: white;
 }
 
-.send-form {
-    width: fit-content;
-    padding: .5rem 4rem;
-    font-size: 1.2rem;
+.form-main > button {
     margin: 0 auto;
-    font-weight: 700;
-    border: .125rem solid black;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 2rem -.25rem black;
-    border-radius: .5rem;
-    transition: .125s;
-    cursor: pointer;
-    background-color: var(--clr-accent);
-    color: white;
-}
-
-.send-form:hover {
-    scale: 1.05;
-    box-shadow: 0 0 2rem .2rem black;
-    color: black;
+    font-size: 1.2rem;
+    padding: .75rem 2rem;
 }
