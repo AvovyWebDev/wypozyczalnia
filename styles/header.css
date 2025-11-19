@@ -1,0 +1,56 @@
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    outline: .25rem solid var(--clr-accent);
+    background: linear-gradient(45deg, var(--clr-secondary) 50%, var(--clr-primary) 50%);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    gap: 5rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-whatsapp {
+    height: 2rem;
+    aspect-ratio: 1;
+}
+
+.header-whatsapp > img {
+    height: 100%;
+    object-fit: cover;
+    filter: invert(1);
+}
+
+.header-right > nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-right > nav > a {
+    color: transparent;
+    background: linear-gradient(90deg, var(--clr-accent) 50%, white 50%);
+    background-size: 200%;
+    background-position: right;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 1.44rem;
+    transition: .125s;
+}
+
+.header-right > nav > a:hover {
+    background-position: left;
+}
